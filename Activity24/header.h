@@ -1,12 +1,19 @@
-//
-//  header.h
-//  Activity24
-//
-//  Created by Chatchapong Thuaypha on 10/25/24.
-//
+#ifndef HEADER_H
+#define HEADER_H
+#include <string>
+using namespace std;
 
-#ifndef header_h
-#define header_h
+struct Customer {
+    
+    string id;
+    string name;
+    string email;
+};
 
+namespace CustomerFunctions {
 
-#endif /* header_h */
+    void customerDetails(Customer& customer);
+    void displayCustomer(const Customer& customer);
+}
+
+#endif

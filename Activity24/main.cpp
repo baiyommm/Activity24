@@ -1,14 +1,13 @@
-//
-//  main.cpp
-//  Activity24
-//
-//  Created by Chatchapong Thuaypha on 10/25/24.
-//
+#include "header.h"
+using namespace std;
+using namespace CustomerFunctions;
 
-#include <iostream>
+int main() {
+    
+    Customer customer;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    customerDetails(customer);
+    displayCustomer(customer);
+
     return 0;
 }
